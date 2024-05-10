@@ -1,0 +1,20 @@
+<HTML>
+<body>
+<?php
+session_start();
+if(isset($_SESSION['gmail']))
+		{
+			include('HEADERS\HEADERL.php');			
+		}
+	else
+		{
+			include('HEADERS\HEADER.php');
+		}
+?>
+<?php
+include('HEADERS\GALLERY.php');
+include('HEADERS\BOTTOMHEADER.php');
+include('HEADERS\CONNECTION.php');
+?>
+</body>
+</html>
